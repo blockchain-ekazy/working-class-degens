@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Akrobat-Regular";
+  src: url("../Fonts/Akrobat-Regular.otf");
+}
+@font-face {
+  font-family: "Chelsea Market";
+  src: url("../Fonts/chelsea-market/ChelseaMarket-Regular.ttf");
+}
+.quantityselector {
+  z-index: 10;
+  position: relative;
+}
+h1,
+h2,
+h3 {
+  font-family: "Chelsea Market" !important;
+}
+
+p,
+body {
+  font-family: "Akrobat-Regular";
+}
+.AAA {
+  background-image: url("../Imgs/bg.gif");
+  background-position: center;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0003;
+  /* background-blend-mode: darken; */
+  min-height: 100vh;
+}
+.sev {
+  font-size: 100px;
+  font-weight: 500;
+  color: #8a462f;
+  text-shadow: 5px 5px 5px #000;
+}
+.sev1 {
+  padding-top: 100px;
+}
+.alie {
+  max-width: 100%;
+  width: 550px !important;
+  margin-top: -290px;
+  margin-left: 80px;
+}
+.tbd {
+  background: #8a462f;
+  color: white;
+  font-size: 25px;
+  font-family: "chelsea market";
+  border: 3px solid;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 12px;
+  border-color: #8a462f;
+}
+.tbd:hover {
+  color: #8a462f;
+  background-color: white;
+  border-color: #8a462f;
+}
+
+svg.bubbles {
+  position: absolute;
+  top: -4000px;
+  left: -4000px;
+}
+
+#gooey-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 25px;
+  font-family: "chelsea market";
+  border: none;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  background-color: #8a462f;
+}
+#gooey-button:focus {
+  outline: none;
+}
+
+.alie1 {
+  width: 200px !important;
+  max-width: 100%;
+  margin-top: -270px;
+  margin-right: 150px !important;
+}
+.count {
+  color: white;
+  background-color: #8a462f;
+  font-size: 22px;
+}
+
+.quantity {
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+@media only screen and (max-width: 600px) {
+  .sev {
+    font-size: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .tbd {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #gooey-button {
+    font-size: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.opt {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  max-width: 490px;
+}
+.btc {
+  font-size: 35px;
+  color: #8a462f;
+}
+.uty {
+  /* padding-top: 250px; */
+}
+#gooey-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #8a462f;
+}
+#gooey-button:hover .bubble {
+  background-color: white;
+}
+.maxbtn {
+  line-height: 0.9em;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
