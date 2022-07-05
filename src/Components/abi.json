@@ -211,6 +211,13 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "merkleRoot",
+    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       { "internalType": "uint256", "name": "quantity", "type": "uint256" }
     ],
@@ -252,15 +259,13 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "presale",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [
-      { "internalType": "uint256", "name": "quantity", "type": "uint256" }
+      { "internalType": "uint256", "name": "quantity", "type": "uint256" },
+      {
+        "internalType": "bytes32[]",
+        "name": "merkleproof",
+        "type": "bytes32[]"
+      }
     ],
     "name": "presaleMint",
     "outputs": [],
@@ -315,10 +320,27 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "address", "name": "s", "type": "address" }],
-    "name": "setstrange_times",
+    "inputs": [{ "internalType": "bytes32", "name": "m", "type": "bytes32" }],
+    "name": "setMerkleRoot",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "presale", "type": "uint256" },
+      { "internalType": "uint256", "name": "publicSale", "type": "uint256" }
+    ],
+    "name": "setWalletLimits",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "status",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
     "type": "function"
   },
   {

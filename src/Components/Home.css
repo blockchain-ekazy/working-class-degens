@@ -1,10 +1,7 @@
 @font-face {
-  font-family: "Akrobat-Regular";
-  src: url("../Fonts/Akrobat-Regular.otf");
-}
-@font-face {
+  /* font-family: "Akrobat-Regular"; */
   font-family: "Chelsea Market";
-  src: url("../Fonts/chelsea-market/ChelseaMarket-Regular.ttf");
+  src: url("../Fonts/Akrobat-Regular.otf");
 }
 .quantityselector {
   z-index: 10;
@@ -18,11 +15,11 @@ h3 {
 
 p,
 body {
-  font-family: "Akrobat-Regular";
+  font-family: "Chelsea Market";
 }
 .AAA {
   background-image: url("../Imgs/bg.gif");
-  background-position: center;
+  background-position: left;
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,13 +28,17 @@ body {
   min-height: 100vh;
 }
 .sev {
-  font-size: 100px;
-  font-weight: 500;
-  color: #8a462f;
+  font-size: 70px;
+  font-weight: 900;
+  color: #9f9b67;
+  color: #fff;
+}
+* {
   text-shadow: 5px 5px 5px #000;
 }
 .sev1 {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  min-height: 100vh;
 }
 .alie {
   max-width: 100%;
@@ -46,7 +47,7 @@ body {
   margin-left: 80px;
 }
 .tbd {
-  background: #8a462f;
+  background: #9f9b67;
   color: white;
   font-size: 25px;
   font-family: "chelsea market";
@@ -56,12 +57,12 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 12px;
-  border-color: #8a462f;
+  border-color: #9f9b67;
 }
 .tbd:hover {
-  color: #8a462f;
+  color: #9f9b67;
   background-color: white;
-  border-color: #8a462f;
+  border-color: #9f9b67;
 }
 
 svg.bubbles {
@@ -81,7 +82,7 @@ svg.bubbles {
   color: white;
   border-radius: 10px;
   position: relative;
-  background-color: #8a462f;
+  background-color: #9f9b67;
 }
 #gooey-button:focus {
   outline: none;
@@ -95,7 +96,7 @@ svg.bubbles {
 }
 .count {
   color: white;
-  background-color: #8a462f;
+  background-color: #9f9b67;
   font-size: 22px;
 }
 
@@ -109,9 +110,13 @@ svg.bubbles {
 .btn:focus {
   box-shadow: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
   .sev {
-    font-size: 70px;
+    font-size: 50px;
+  }
+  .preview {
+    max-height: 450px;
+    object-fit: contain;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -134,16 +139,17 @@ svg.bubbles {
 }
 
 .opt {
-  background-color: black;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-bottom-right-radius: 100px;
-  border-top-left-radius: 100px;
-  max-width: 490px;
+  /* background-color: #5da1a066; */
+  background-color: #000000bb;
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+  border-radius: 20px;
+  /* border-top-left-radius: 100px; */
+  /* max-width: 490px; */
 }
 .btc {
   font-size: 35px;
-  color: #8a462f;
+  color: #9f9b67;
 }
 .uty {
   /* padding-top: 250px; */
@@ -151,7 +157,8 @@ svg.bubbles {
 #gooey-button:hover {
   cursor: pointer;
   background-color: white;
-  color: #8a462f;
+  color: #9f9b67;
+  text-shadow: 5px 5px 5px #9f9b67;
 }
 #gooey-button:hover .bubble {
   background-color: white;
@@ -163,4 +170,7 @@ svg.bubbles {
   font-size: 13px;
   cursor: pointer;
   font-weight: 500;
+}
+.shadow {
+  box-shadow: 5px 5px 0px 5px #000;
 }
