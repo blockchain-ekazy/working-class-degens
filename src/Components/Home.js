@@ -184,7 +184,7 @@ export default function Home() {
             )}
             <br />
             <a
-              // href="https://twitter.com/NFTStrangeTimes"
+              href="https://twitter.com/wcdnft"
               target="_blank"
               className="mx-2"
             >
