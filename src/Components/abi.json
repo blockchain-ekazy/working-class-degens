@@ -327,6 +327,13 @@
     "type": "function"
   },
   {
+    "inputs": [{ "internalType": "uint256", "name": "s", "type": "uint256" }],
+    "name": "setStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "inputs": [
       { "internalType": "uint256", "name": "presale", "type": "uint256" },
       { "internalType": "uint256", "name": "publicSale", "type": "uint256" }
