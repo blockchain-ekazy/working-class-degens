@@ -104,7 +104,6 @@ export default function Home() {
       ct = new web3.eth.Contract(abi, REACT_APP_CONTRACT_ADDRESS);
 
       let p = await ct.methods.status().call();
-      console.log(p);
       setMaxallowed(p == 1 ? 1 : 2);
       setStatus(p);
 
@@ -118,6 +117,7 @@ export default function Home() {
   };
 
   const connectWallet = async () => {
+    console.log(merkleTree.getHexRoot());
     if (!initializeWeb3()) return false;
     await window.ethereum.enable();
     let m = await web3.eth.getAccounts();
